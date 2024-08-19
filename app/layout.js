@@ -9,6 +9,9 @@ export const metadata = {
   title: "Ianina Shpak CV",
   description:
     "Резюме или CV на позицию фронтенд-разработчик. Навыки: HTML, CSS, SCSS, JavaScript, React, Redux, Next.js, TypeScript",
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({ children }) {
