@@ -1,0 +1,17 @@
+.title {
+  &::before {
+    background-color: var(--accent-first-dark-color);
+  }
+}
+
+.listLink,
+.location {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 15px;
+
+  svg {
+    height: 50%;
+    width: auto;
+  }
+}

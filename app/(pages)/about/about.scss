@@ -1,0 +1,69 @@
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.aboutLink {
+  text-decoration: underline var(--accent-second-color);
+}
+
+.aboutButton {
+  align-self: flex-start;
+  display: flex;
+  
+  padding: 5px 10px;
+  border: 1px solid var(--accent-second-dark-color);
+}
+
+.blockWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.experienceInfo {
+  display: grid;
+  grid-template-areas: 
+  "position period"
+  "company city";
+
+  margin-bottom: 10px;
+  .position {
+    grid-area: position;
+    font-weight: 700;
+  }
+
+  .period {
+    grid-area: period;
+    font-style: italic;
+  }
+
+  .company {
+    grid-area: company;
+    
+  }
+
+  .city {
+    grid-area: city;
+    font-style: italic;
+  }
+}
+
+.aboutList {
+  padding-left: 30px;
+}
+
+.aboutSubList {
+  padding-left: 25px;
+}

@@ -1,0 +1,75 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --basic-color: #545454;
+  --basic-light-color: #e1ebec;
+  --accent-first-dark-color: #148b8b;
+  --accent-first-color: #7ac7c7;
+  --accent-first-light-color: #7ddede;
+  --accent-second-dark-color: #fa595f;
+  --accent-second-color: #ff8d92;
+  --accent-second-light-color: #facfd0;
+  --gradient: linear-gradient(67.05deg, #bef9f9 19.78%, #fae0e1 74.89%);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --basic-color: #0e0619;
+    --basic-light-color: #572462;
+    --accent-first-dark-color: #7c33b5;
+    --accent-second-dark-color: #d77fc1;
+    --gradient: linear-gradient(302.45deg, #7c33b5 14.11%, #ed969e 64.31%);
+  }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--basic-color);
+  background-color: #f5f5f5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.listReset {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  grid-template-rows: 55px auto;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+
+  height: 100%;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+@import './styles/titles.scss';

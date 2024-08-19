@@ -1,0 +1,59 @@
+.title {
+  &::before {
+    background-color: var(--accent-second-dark-color);
+  }
+}
+
+.item {
+  margin-bottom: 15px;
+  padding-left: 40px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  
+
+  &.iconHtml {
+    background-image: url(../../../../public/icons/html5.svg);
+  }
+
+  &.iconCSS {
+    background-image: url(../../../../public/icons/css.svg);
+  }
+
+  &.iconJS{
+    background-image: url(../../../../public/icons/javascript.svg);
+  }
+
+  &.iconTS {
+    background-image: url(../../../../public/icons/typescript.svg);
+  }
+
+  &.iconReact {
+    background-image: url(../../../../public/icons/react.svg);
+  }
+
+  &.iconRedux {
+    background-image: url(../../../../public/icons/redux.svg);
+  }
+
+  &.iconNext {
+    background-image: url(../../../../public/icons/next.svg);
+  }
+
+  &.iconSCSS {
+    background-image: url(../../../../public/icons/sass.svg);
+  }
+
+  &.iconVite {
+    background-image: url(../../../../public/icons/vite.svg);
+  }
+
+  &.iconGit {
+    background-image: url(../../../../public/icons/git.svg);
+  }
+
+  &.iconFigma {
+    background-image: url(../../../../public/icons/figma.svg);
+  }
+}
