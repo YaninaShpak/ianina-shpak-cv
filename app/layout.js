@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Резюме или CV на позицию фронтенд-разработчик. Навыки: HTML, CSS, SCSS, JavaScript, React, Redux, Next.js, TypeScript",
   icons: {
-    icon: '%PUBLIC_URL%/favicon.ico',
+    icon: '/favicon.ico',
   }
 };
 
