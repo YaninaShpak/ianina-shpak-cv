@@ -1,0 +1,13 @@
+.downloadButton {
+  align-self: flex-start;
+  display: flex;
+
+  padding: 5px 10px;
+  border: 1px solid var(--accent-second-dark-color);
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
