@@ -1,3 +1,4 @@
+import DownloadButton from "@/app/components/buttons/DownloadButton/DownloadButton";
 import "./about.scss";
 
 export default function About() {
@@ -30,13 +31,7 @@ export default function About() {
           </p>
         </div>
 
-        <a
-          className="aboutButton"
-          href="files/Resume.Shpak_Ianina.pdf"
-          download=""
-        >
-          Скачать резюме в pdf
-        </a>
+        <DownloadButton text="Скачать резюме в pdf"/>
         <div className="experience blockWrapper">
           <h3>Опыт работы</h3>
           <div>
