@@ -4,14 +4,20 @@
   }
 }
 
+.skillsList {
+  @media (max-width: 680px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    column-gap: 20px;
+  }
+}
+
 .item {
   margin-bottom: 15px;
   padding-left: 40px;
 
   background-repeat: no-repeat;
-  background-size: contain;
-
-  
+  background-size: 20px;
 
   &.iconHtml {
     background-image: url(../../../../public/icons/html5.svg);
@@ -21,7 +27,7 @@
     background-image: url(../../../../public/icons/css.svg);
   }
 
-  &.iconJS{
+  &.iconJS {
     background-image: url(../../../../public/icons/javascript.svg);
   }
 

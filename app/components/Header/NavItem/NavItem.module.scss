@@ -6,23 +6,25 @@
   overflow: hidden;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
 
     width: 0;
     height: 3px;
-    
+
     transition: width 0.3s linear;
   }
 
-  &:hover {
-    &::after {
-      width: 100%;
-     
-      border-radius: 15px;
-      background-color: var(--accent-second-color);
+  @media (hover: hover) {
+    &:hover {
+      &::after {
+        width: 100%;
+
+        border-radius: 15px;
+        background-color: var(--accent-second-color);
+      }
     }
   }
 
@@ -38,9 +40,11 @@
 .link.active {
   color: var(--accent-second-color);
   cursor: default;
-  &:hover {
-    &::after {
-      display: none;
+  @media (hover: hover) {
+    &:hover {
+      &::after {
+        display: none;
+      }
     }
   }
 }

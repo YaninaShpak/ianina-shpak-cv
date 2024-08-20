@@ -1,19 +1,14 @@
 .mainContent {
   grid-area: content;
 
-  padding-right: 40px;
+  padding-top: 15px;
+  padding-right: calc(10px + (40 - 10) * ((100vw - 1110px) / (1440 - 1110)));
   padding-left: 15px;
   padding-bottom: 20px;
 
   background-color: var(--accent-second-light-color);
-}
 
-.projectPage_title {
-  margin-bottom: 20px;
-}
-
-.projectList {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+  @media (max-width: 1110.9px) {
+    padding-right: 10px;
+  }
 }

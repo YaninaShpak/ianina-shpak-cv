@@ -9,6 +9,11 @@
   color: #ffffff;
 
   background-color: var(--basic-color);
+
+  @media (max-width: 680px) {
+    align-items: stretch;
+    padding: 15px;
+  }
 }
 
 .mainTitle {

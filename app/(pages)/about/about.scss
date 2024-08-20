@@ -15,15 +15,51 @@
 }
 
 .aboutLink {
-  text-decoration: underline var(--accent-second-color);
+  position: relative;
+
+  padding-bottom: 3px;
+
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--accent-second-color);
+
+    transition: width 0.3s linear;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      &::after {
+        animation: 1s alternate underline;
+      }
+    }
+  }
+
+  &:active {
+    color: var(--accent-second-color);
+
+    &::after {
+      width: 0;
+    }
+  }
 }
 
-.aboutButton {
-  align-self: flex-start;
-  display: flex;
-  
-  padding: 5px 10px;
-  border: 1px solid var(--accent-second-dark-color);
+@keyframes underline {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .blockWrapper {
@@ -34,9 +70,9 @@
 
 .experienceInfo {
   display: grid;
-  grid-template-areas: 
-  "position period"
-  "company city";
+  grid-template-areas:
+    "position period"
+    "company city";
 
   margin-bottom: 10px;
   .position {
@@ -51,7 +87,6 @@
 
   .company {
     grid-area: company;
-    
   }
 
   .city {
