@@ -8,7 +8,7 @@ export default function About() {
       <div className="aboutWrapper">
         <div className="aboutInfo">
           <p>
-            Начинающий фронтенд-разработчик. Есть навыки <b>HTML</b>-верстки,
+            Начинающий фронтенд-разработчик. Есть навыки адаптивной верстки (HTML, CSS),
             кодинга на чистом <b>JavaScript</b>, на <b>TypeScript</b>, а также с
             использованием библиотеки <b>React</b> и фреймфорка <b>Next.js</b>.
             В соседнем разделе Вы можете посмотреть мои проекты: сайт по подбору
