@@ -58,8 +58,8 @@ export const contactsData = [
     ),
   },
   {
-    title: "yppoyu@gmail.com",
-    link: "mailto:yppoyu@gmail.com",
+    title: "9122887230@mail.ru",
+    link: "mailto:9122887230@mail.ru",
     icon: (
       <svg
         className="contacts-list__icon"
