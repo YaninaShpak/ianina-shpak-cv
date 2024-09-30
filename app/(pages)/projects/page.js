@@ -14,8 +14,9 @@ export default function Projects() {
               title={el.title}
               technologies={el.technologies}
               linkProject={el.linkProject}
-              linkCode={el.linkCode}
+              linkCode={el?.linkCode}
               description={el.description}
+              schoolPlatform={el?.schoolPlatform}
               image={el.image}
             />
           </li>
