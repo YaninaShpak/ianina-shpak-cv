@@ -1,0 +1,27 @@
+.info {
+  display: grid;
+  grid-template-areas:
+    "position period"
+    "company city";
+
+  margin-bottom: 10px;
+  
+  .position {
+    grid-area: position;
+    font-weight: 700;
+  }
+
+  .period {
+    grid-area: period;
+    font-style: italic;
+  }
+
+  .company {
+    grid-area: company;
+  }
+
+  .city {
+    grid-area: city;
+    font-style: italic;
+  }
+}

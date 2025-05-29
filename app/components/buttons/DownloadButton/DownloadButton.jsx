@@ -5,7 +5,7 @@ const DownloadButton = ({ text }) => {
   return (
     <a
       className={styles.downloadButton}
-      href="files/Resume.Shpak_Ianina.pdf"
+      href="files/Shpak_Yanina.Resume.pdf"
       download=""
     >
       {text}
