@@ -2,10 +2,10 @@
   display: grid;
   grid-template-areas:
     "position period"
-    "company city";
+    "companyWrapper city";
 
   margin-bottom: 10px;
-  
+
   .position {
     grid-area: position;
     font-weight: 700;
@@ -16,12 +16,19 @@
     font-style: italic;
   }
 
-  .company {
-    grid-area: company;
+  .companyWrapper {
+    grid-area: companyWrapper;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
   }
 
   .city {
     grid-area: city;
     font-style: italic;
   }
+}
+
+.link {
+  text-decoration: underline #abaaaa;
 }

@@ -3,6 +3,8 @@ const experienceList = [
     position: "Frontend-разработчик",
     period: "11/2024г. - наст.время",
     company: "Абак-Пресс",
+    project: "Я Покупаю",
+    projectLink: "https://www.yapokupayu.ru/",
     city: "Екатеринбург",
     details: [
       "исправление старых ошибок",
@@ -11,13 +13,15 @@ const experienceList = [
       "рефакторинг кода",
       "работа с шаблонизаторами erb и haml",
       "взаимодействие с backend- и frontend-разработчиками, тестировщиками и проектным менеджером",
-      "выполнение бизнес-задач"
+      "выполнение бизнес-задач",
+      "ревью Pull requests"
     ]
   },
   {
     position: "Редактор-аналитик",
     period: "05/2018 - 02/2025гг.",
     company: "Медиалогия",
+    companyLink: "https://www.mlg.ru/",
     city: "Москва",
     details: [
       "анализ, обработка, сортировка, а также контроль реагирования на поступающие в систему данные",
@@ -40,6 +44,8 @@ const experienceList = [
     position: "Контент-редактор",
     period: "06/2015 - 02/2018гг.",
     company: "Абак-Пресс",
+    project: "Близко.ру",
+    projectLink: "https://blizko.ru/",
     city: "Екатеринбург",
     details: [
       "создание сайтов для клиентов на собственной платформе Blizko.ru, наполнение контентом",
