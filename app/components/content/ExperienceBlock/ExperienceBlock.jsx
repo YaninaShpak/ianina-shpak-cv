@@ -1,5 +1,7 @@
 import styles from "./ExperienceBlock.module.css";
 import ContentList from "../ContentList/ContentList";
+import formatPeriod from "@/app/utils/format-period";
+import { useMemo } from "react";
 
 const ExperienceBlock = ({
   position,
@@ -11,11 +13,14 @@ const ExperienceBlock = ({
   project,
   projectLink,
 }) => {
+  const { start, end } = period || {};
+  const experiencePeriod = useMemo(() => formatPeriod(start, end), [start, end]);
+
   return (
     <div className={styles.root}>
       <div className={styles.info}>
         <p className={styles.position}>{position}</p>
-        <p className={styles.period}>{period}</p>
+        <p className={styles.period}>{experiencePeriod}</p>
         <div className={styles.companyWrapper}>
           {companyLink ? (
             <a className={styles.link} href={companyLink} target="_blank">
